@@ -1,4 +1,4 @@
-const SERVER_URL = "http://localhost:8080";
+const SERVER_URL = "https://workshop2-euctepgkf7hnc5fm.canadacentral-01.azurewebsites.net/";
 //const SERVER_URL = "http://localhost:8080";
 
 // Função para enviar um novo post (Create)
