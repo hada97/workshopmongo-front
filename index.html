@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rede Social - Postagens</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <h1>Vibe Social</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Perfil</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="main-container">
+        <div class="container">
+            <!-- Formulário para criar um post -->
+            <section class="new-post">
+                <h2>Post</h2>
+                <button id="togglePostFormButton">Criar Post</button>
+                <form id="createPostForm" style="display: none;">
+                    <input type="text" id="postTitle" placeholder="Título" required />
+                    <input type="text" id="postContent" placeholder="Mensagem" required />
+                    <input type="text" id="authorName" placeholder="Nome do Autor" required />
+                    <input type="text" id="authorId" placeholder="ID do Autor" required />
+                    <button type="submit">Publicar</button>
+                </form>
+            </section>
+
+            <section class="posts-feed">
+                <div id="postsList" class="posts-list"></div>
+                <div id="loadingStatus" class="loading-status">Carregando ...</div>
+            </section>
+        </div>
+
+        <div class="user-container">
+            <section class="new-post">
+                <h2>User</h2>
+                <button id="toggleUserFormButton">Cadastro</button>
+                <form id="createUserForm" style="display: none;">
+                    <input type="text" id="username" placeholder="Nome" required />
+                    <input type="email" id="email" placeholder="Email" required />
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+
+            <section class="user-feed">
+                <div id="userList" class="user-list"></div>
+                <div id="loading" class="loading-status">Carregando ...</div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Vibe Social</p>
+</footer>
+
+<!-- A inclusão do script deve vir no final para garantir que o DOM seja carregado primeiro -->
+<script src="script.js"></script>
+</body>
+</html>
